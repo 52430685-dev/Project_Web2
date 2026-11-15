@@ -5,11 +5,11 @@ return(
 <nav className="navbar">
 <h2 className="logo">Book📚</h2>
 <div className="nav-links">
-<link to = "/">Home</link>
-<link to = "/Book">Book</link>
-<link to = "/About">About</link>
-<link to = "/Contact">Contact</link>
-<link to = "/Cart">Cart🛒</link>
+<Link to = "/">Home</Link>
+<   Link to = "/Book">Book</Link>
+<   Link to = "/About">About</Link>
+<   Link to = "/Contact">Contact</Link>
+<   Link to = "/Cart">Cart🛒</Link>
 </div>
 </nav>
 );
