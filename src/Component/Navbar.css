@@ -1,0 +1,36 @@
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background-color: #1e293b;
+color: white;
+}
+.logo{
+font-size: 26px;
+color: #fbbf24;
+}
+.nav-links{
+display: flex;
+gap: 25px;
+}
+.nav-links a{
+color: white;
+text-decoration: none;
+font-size: 16px;
+}
+.nav-links a:hover{
+color:#fbbf24 ;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  .nav-links{
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+  }
+}
