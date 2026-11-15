@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "./Home.css";
 
 function Home  () {
   return (
@@ -17,6 +17,10 @@ function Home  () {
 <h3>📚 Many Books</h3>
 <p>You can choose and buy books easily</p>
 </div>
+ <div className="box">
+          <h3>🛒 Easy Shopping</h3>
+          <p>You can choose and buy books easily.</p>
+        </div>
 
     <div className="box">
     <h3>⭐ Good Quality</h3>
