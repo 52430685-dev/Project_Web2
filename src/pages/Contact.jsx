@@ -10,9 +10,9 @@ if(name==="" || message===""){
 alert("Please fill all fields");
 return;
 }
-setMessages([...messages,{mame,message}]);
+setMessages([...messages,{name,message}]);
 setName("");
-sendMessage("");
+setMessage("");
 }
 
   return (
@@ -29,7 +29,7 @@ sendMessage("");
        <textarea
        placeholder="Your Message"
        value={message}
-       onChange={(e)=>sendMessage(e.target.value)}
+       onChange={(e)=>setMessage(e.target.value)}
        />
     <div className="contact-info">
     <h3>Contact Information</h3>
@@ -40,8 +40,8 @@ sendMessage("");
     <h2>Messages</h2>
     {messages.map((item,index)=>(
         <div className="message-box" key={index}>
-        <h3>{item.name}</h3>
-        <p>{item.message}</p>
+          <h3>Name:{item.name}</h3>
+        <p>Message:{item.message}</p>
         </div>
     ))}
     </div>
